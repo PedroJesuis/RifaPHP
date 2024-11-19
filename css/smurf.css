@@ -1,0 +1,322 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:sans-serif;
+}
+
+body {
+    color: #333;
+}
+
+header {
+    background-color: #0f0c25;
+    color: white;
+    padding: 10px ;
+
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header .logo {
+    max-width: 150px;
+}
+
+nav {
+    display: flex;
+    gap: 10px; 
+}
+
+.btn {
+    background-color: #3DC2EC;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+   
+}
+
+.btn-secondary {
+    background-color: #ffffff;
+    color: #000;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+.container-main {
+    background: url('img/hero-bg.jpg') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.container-main-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.container-main span a{
+    color: #3DC2EC; 
+    text-decoration: none;
+}
+
+.container-main h1 {
+    font-size: 100px;
+    margin-bottom: 20px;
+}
+
+.container-main p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.btn-primary {
+    background-color: #3DC2EC;
+    color: #ffffff;
+}
+
+
+
+
+.main{
+    background-color: #0f0c25;
+}
+
+.equipe{
+    background-color: #ffffff;
+    border-radius: 25px;
+    padding: 50px 20px;
+}
+
+
+.equipe .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.equipe-content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.equipe-photo {
+    max-width: 400px;
+    width: 100%;
+    border-radius: 10px;
+    border: 3px solid #3DC2EC;
+}
+
+.equipe-info {
+    max-width: 600px;
+}
+
+.equipe-info p {
+    margin-bottom: 10px;
+}
+
+ 
+.titulo {
+    color: #3DC2EC;
+    font-size: 60px;
+    margin-top: 70px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    gap: 20px;
+    padding: 20px; 
+    margin: 0 auto; 
+
+}
+
+
+.card-container, .card-container2 {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+    max-width: 900px;
+    width: 100%;
+}
+
+
+.card {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+
+.card-img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    border: 3px solid #3DC2EC; 
+}
+
+
+.card-text {
+    padding: 10px 20px;
+    max-width: 600px;
+    margin: 0 auto; 
+}
+
+
+.card-descricao {
+    font-size: 16px;
+    color: #fffefe; 
+    margin: 0;
+    padding: 10px 0;
+}
+
+
+
+
+
+
+
+
+footer {
+    background-color: #0f0c25;
+    color: #333;
+    padding: 20px 0;
+   
+}
+
+footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-column {
+    flex: 1;
+    max-width: 250px;
+}
+
+.footer-column h6 {
+    margin-bottom: 15px;
+    font-size: 1.2em;
+    color: #3DC2EC;
+}
+
+.footer-column a {
+    display: block;
+    color: #ffffff;
+    margin-bottom: 10px;
+    text-decoration: none;
+}
+
+.footer-column a:hover {
+    text-decoration: underline;
+}
+
+.footer-column img {
+    width: 30px;
+    margin: 5px;
+}
+
+
+
+
+
+
+@media (max-width: 1024px) {
+    .cards {
+        flex-wrap: wrap;
+    }
+
+
+}
+
+@media (max-width: 768px) {
+    .cards {
+        align-items: center;
+    }
+
+    .card-container, .card-container2 {
+        max-width: 600px;
+    }
+
+
+}
+
+@media (max-width: 480px) {
+    .card-descricao {
+        font-size: 14px;
+    }
+
+    .card-text {
+        padding: 10px;
+    }
+
+    .card {
+        max-width: 100%; 
+    }
+
+     
+}
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+    .team-content {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .footer-column {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .logo{
+        margin-right: 15px;
+    }
+
+    .container-main h1 {
+    font-size: 80px;
+    margin-bottom: 20px;
+}
+}
+
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 1.8em;
+    }
+    
+    .hero p {
+        font-size: 1em;
+    }
+    
+    .btn {
+        padding: 8px 15px;
+    }
+}

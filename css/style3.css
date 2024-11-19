@@ -1,0 +1,113 @@
+body{
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #059213ce;
+    color: #fff;
+}
+
+.caixa{
+  background-color: #ffffff;
+  width: 650px;
+}
+.caixa h2{
+  font-size: 90px;
+  color: #059212;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+a{
+  text-decoration: none;
+  color: rgb(134, 243, 134);
+}
+
+#login{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+label:focus-within {
+  color: #059212;
+}
+label{
+  width: 100%;
+  color: #777;
+  align-self: flex-start;
+  transition: 0.15s linear;
+}
+input{
+  font-size: 1.1875rem;
+  color: #404040;
+  padding: 1rem 0 0.5rem 0;
+  width: 100%;
+  border: none;
+  border-color: #a0a0a0;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  margin-bottom: 3rem;
+  transition: 0.15s linear;
+}
+input:focus {
+  outline: none;
+  border-color: #059212;
+}
+.control{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn-home{
+  margin: 10px;
+  border: 1px solid #059212; 
+  display: inline-block;
+  overflow: hidden;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  border-radius: 4px;
+  background-color:transparent;
+  text-decoration: none;
+  text-align: center;
+  color: #059212;
+  height: 70px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 0.8125rem;
+}
+.btn-home:hover,
+.btn-home:focus{
+   background-color: #059212;
+   color: white;
+}
+
+.btn-home::placeholder{
+ color: #615b5b;
+}
+
+        /* finalização do botão */
+ 
+h1{
+  margin-top: 100px;
+  color: #000000;
+  font-size: 50px;
+}
+
+.caixa {
+  margin-top: 10px;
+  padding: 20px;
+ box-shadow: 0px 2px 5px 3px rgba(0, 0, 0, 0.479);
+ border-radius: 4px;
+}
+
+input:focus{
+  outline: none;
+}
+
+
+@media screen  and (max-width: 1390px) {
+
+#login{
+  margin-top: 100px;
+}
+
+}

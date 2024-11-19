@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Nós - RifaNet</title>
+    <link rel="stylesheet" href="../css/sobre.css">
+</head>
+<body>
+    
+    <header>
+
+        <div class="container">
+
+            <a href="../php/login.php"><img src="../img/logo.jpg" alt="Logo" class="logo"></a>
+
+            <nav id="nav">
+
+                <a href="../php/login.php" class="btn">Voltar</a>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+    
+    <main>
+
+        <section class="intro">
+
+            <h1>Sobre Nós</h1>
+            <p>
+A equipe do 1º C do curso de Desenvolvimento de Sistemas, composta por Marcelo, Pedro Emanuel, Murilo e Victor, está desenvolvendo o RifaNet, um site para gestão de rifas online. Com o objetivo de criar uma plataforma segura e prática, eles estão aplicando suas habilidades em programação, design e banco de dados, aprendendo durante o processo. O projeto, originado de uma ideia do professor Jonshon, visa oferecer uma solução completa para criação e gerenciamento de rifas. A equipe definiu a arquitetura do site, dividiu as tarefas, e optou pelo MySQL para o banco de dados. O RifaNet está se tornando uma experiência valiosa e um portfólio para futuros profissionais, refletindo o potencial criativo e técnico dos alunos.
+            </p>
+
+        </section>
+
+        
+        <section class="cards">
+            <div class="card">
+                <img src="../img/marcelo.jpeg" alt="Membro 1">
+                <div class="card-body">
+                    <h3>Marcelo França</h3>
+                    <p>Responsável pelo design e interface do usuário.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="../img/murilo.jpeg" alt="Membro 2">
+                <div class="card-body">
+                    <h3>Murilo Goncalves</h3>
+                    <p>Responsável pela coordenação do banco de dados.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="../img/victor.jpeg" alt="Membro 3">
+                <div class="card-body">
+                    <h3>Victor Kauan</h3>
+                    <p>Responsável pela arquitetura do banco de dados.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="../img/jesus.jpeg" alt="Membro 4">
+                <div class="card-body">
+                    <h3>Pedro Manuel</h3>
+                    <p>Gerente de projetos e coordenação de equipe.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        document.getElementById('hamburger').addEventListener('click', function() {
+            document.getElementById('nav').classList.toggle('active');
+        });
+    </script>
+    
+</body>
+</html>
+

@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #059212;
+}
+
+
+.container {
+    width: 80%;
+    max-width: 1200px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    padding: 20px;
+}
+
+.rifa-item {
+    display: flex;
+    align-items: center;
+    gap: 20px; 
+}
+
+.rifa-item img {
+    max-width: 45%;
+    height: auto;
+    border-radius: 10px;
+    border: 1px solid #059212;
+    box-shadow: 2px 2px #059212 ;
+    
+}
+ul{
+    margin-bottom: 20px;
+}
+
+.info {
+    max-width: 50%;
+    text-align: left;
+}
+
+.info h1 {
+    font-size: 26px;
+    color: black;
+}
+
+.info p {
+    font-size: 18px;
+    color: black;
+    margin: 10px 0;
+}
+
+.info ul {
+    list-style: none;
+    margin-top: 10px;
+    padding-left: 0;
+}
+ul li{
+color: #000000;
+margin-bottom: 30px;
+}
+.info ul li {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.btn-cpr {
+    padding: 10px 20px;
+    background-color: #059212;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 100px;
+    font-size: 16px;
+    text-decoration: none;
+}
+.btn-cpr:hover {
+    background-color: #03640d;
+}
+
+
+@media (max-width: 768px) {
+    .rifa-item {
+        flex-direction: column; 
+    }
+
+    .rifa-item img, .info {
+        max-width: 100%;
+    }
+
+    .info {
+        text-align: center;
+    }
+}
+/* Estilo para o acordeão */
+.accordion {
+    margin-top: 20px;
+}
+
+.accordion-button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.accordion-button::after {
+    content: '+';
+    font-size: 18px;
+}
+
+.accordion-button.active::after {
+    content: '-';
+}
+
+.accordion-button:hover {
+    background-color: #0056b3;
+}
+
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    background-color: #f1f1f1;
+    padding: 0 20px;
+    border-radius: 0 0 5px 5px;
+}
+
+.accordion-content ul {
+    padding: 15px 0;
+    list-style-type: none;
+}
+
+.accordion-content li {
+    padding: 5px 0;
+    font-size: 16px;
+}
+
+.accordion-content strong {
+    font-weight: bold;
+}
